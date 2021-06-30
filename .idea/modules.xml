@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Desktop_Tic-Tac-Toe3.iml" filepath="$PROJECT_DIR$/.idea/modules/Desktop_Tic-Tac-Toe3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Desktop Tic-Tac-Toe/task/Desktop_Tic-Tac-Toe3.Desktop_Tic-Tac-Toe-task.iml" filepath="$PROJECT_DIR$/.idea/modules/Desktop Tic-Tac-Toe/task/Desktop_Tic-Tac-Toe3.Desktop_Tic-Tac-Toe-task.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Desktop Tic-Tac-Toe/task/Desktop_Tic-Tac-Toe3.Desktop_Tic-Tac-Toe-task.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Desktop Tic-Tac-Toe/task/Desktop_Tic-Tac-Toe3.Desktop_Tic-Tac-Toe-task.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Desktop Tic-Tac-Toe/task/Desktop_Tic-Tac-Toe3.Desktop_Tic-Tac-Toe-task.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Desktop Tic-Tac-Toe/task/Desktop_Tic-Tac-Toe3.Desktop_Tic-Tac-Toe-task.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/Desktop_Tic-Tac-Toe3.util.iml" filepath="$PROJECT_DIR$/.idea/modules/util/Desktop_Tic-Tac-Toe3.util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/Desktop_Tic-Tac-Toe3.util.main.iml" filepath="$PROJECT_DIR$/.idea/modules/util/Desktop_Tic-Tac-Toe3.util.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/Desktop_Tic-Tac-Toe3.util.test.iml" filepath="$PROJECT_DIR$/.idea/modules/util/Desktop_Tic-Tac-Toe3.util.test.iml" />
+    </modules>
+  </component>
+</project>
