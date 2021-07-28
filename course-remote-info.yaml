@@ -3,14 +3,14 @@ hyperskill_project:
   ide_files: https://stepik.org/media/attachments/lesson/517553/additional_files.json
   is_template_based: false
   use_ide: true
-update_date: Thu, 01 Jan 1970 00:00:00 UTC
+update_date: Tue, 27 Jul 2021 23:54:13 UTC
 stages:
 - id: 897
   step: 12894
-  is_completed: false
+  is_completed: true
 - id: 898
   step: 12895
-  is_completed: false
+  is_completed: true
 - id: 899
   step: 12896
   is_completed: false
@@ -19,16 +19,18 @@ stages:
   is_completed: false
 topics:
   0:
+  - title: Write, compile, and run
+    theory_id: 3739
   - title: The basic window in Swing
     theory_id: 5514
   - title: Swing components
     theory_id: 6295
   - title: Layout managers
     theory_id: 6824
-  - title: Immutability
-    theory_id: 7929
   - title: Units of information
     theory_id: 6865
+  - title: Immutability
+    theory_id: 7929
   - title: Computer programming
     theory_id: 8739
   - title: Introduction to Java
@@ -41,6 +43,10 @@ topics:
     theory_id: 3749
   - title: Types and variables
     theory_id: 3518
+  - title: Sizes and ranges
+    theory_id: 3532
+  - title: Type casting
+    theory_id: 3510
   - title: Comments
     theory_id: 3520
   - title: Coding style conventions
@@ -75,18 +81,6 @@ topics:
     theory_id: 3507
   - title: Switch statement
     theory_id: 3504
-  - title: Write, compile, and run
-    theory_id: 3739
-  - title: Errors in programs
-    theory_id: 3536
-  - title: What is an exception
-    theory_id: 3497
-  - title: NPE
-    theory_id: 1945
-  - title: Sizes and ranges
-    theory_id: 3532
-  - title: Type casting
-    theory_id: 3510
   - title: Libraries
     theory_id: 8504
   - title: Calling a method
@@ -95,8 +89,6 @@ topics:
     theory_id: 10982
   - title: The main method
     theory_id: 3489
-  - title: Overloading
-    theory_id: 3525
   - title: Functional decomposition
     theory_id: 10570
   - title: Primitive and reference types
@@ -113,6 +105,12 @@ topics:
     theory_id: 3523
   - title: Final variables
     theory_id: 7427
+  - title: Errors in programs
+    theory_id: 3536
+  - title: What is an exception
+    theory_id: 3497
+  - title: NPE
+    theory_id: 1945
   - title: Introduction to generic programming
     theory_id: 3492
   - title: Lambda expressions
@@ -127,8 +125,6 @@ topics:
     theory_id: 3535
   - title: Instance methods
     theory_id: 3495
-  - title: Multiple constructors
-    theory_id: 3538
   - title: Package
     theory_id: 3621
   - title: Access modifiers
@@ -137,30 +133,18 @@ topics:
     theory_id: 3599
   - title: Inheritance
     theory_id: 3583
-  - title: The keyword super
-    theory_id: 3588
-  - title: Protected modifier
-    theory_id: 6692
-  - title: Referencing subclass objects
-    theory_id: 3585
-  - title: Annotations basics
-    theory_id: 3622
   - title: Objects
     theory_id: 4727
-  - title: Boxing and unboxing
-    theory_id: 3595
-  - title: Static members
-    theory_id: 3534
-  - title: Hiding and overriding
-    theory_id: 3572
-  - title: Polymorphism
-    theory_id: 3587
   - title: Interface
     theory_id: 3615
   - title: Default methods
     theory_id: 11354
+  - title: Comparable
+    theory_id: 14456
   - title: Anonymous classes
     theory_id: 11896
+  - title: Boxing and unboxing
+    theory_id: 3595
   1:
   - title: Window listeners
     theory_id: 10614
@@ -168,6 +152,8 @@ topics:
     theory_id: 5538
   - title: Standard logger
     theory_id: 6001
+  - title: Static members
+    theory_id: 3534
   - title: Enums in Java
     theory_id: 11514
   - title: Fields and methods in enum
@@ -187,28 +173,30 @@ topics:
     theory_id: 5357
   - title: Ordering and total order
     theory_id: 9253
+  - title: Overloading
+    theory_id: 3525
   - title: Random
     theory_id: 4910
   - title: Generics and Object
     theory_id: 3493
   - title: What are collections
     theory_id: 3770
-  - title: The Collections Framework overview
-    theory_id: 3624
   - title: ArrayList
     theory_id: 3567
+  - title: The Collections Framework overview
+    theory_id: 3624
   - title: The List interface
     theory_id: 3581
   - title: The Set interface
     theory_id: 3575
-  - title: Comparator
-    theory_id: 12966
   - title: Standard functional interfaces
     theory_id: 3623
   - title: Function composition
     theory_id: 3580
   - title: Optional
     theory_id: 9699
+  - title: Comparator
+    theory_id: 12966
   - title: Functional data processing with streams
     theory_id: 3582
   - title: Stream filtering
@@ -227,10 +215,24 @@ topics:
     theory_id: 10180
   - title: Stream pipelines
     theory_id: 3612
+  - title: Multiple constructors
+    theory_id: 3538
+  - title: The keyword super
+    theory_id: 3588
+  - title: Protected modifier
+    theory_id: 6692
+  - title: Referencing subclass objects
+    theory_id: 3585
   - title: The Object class
     theory_id: 3596
+  - title: Annotations basics
+    theory_id: 3622
   - title: Initialization blocks
     theory_id: 3533
+  - title: Hiding and overriding
+    theory_id: 3572
+  - title: Polymorphism
+    theory_id: 3587
   - title: Abstract class
     theory_id: 3597
   - title: Anonymous classes properties

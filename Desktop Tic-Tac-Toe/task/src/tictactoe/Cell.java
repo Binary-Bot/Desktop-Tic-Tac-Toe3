@@ -1,51 +1,49 @@
 package tictactoe;
 
 import javax.swing.*;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
+import java.awt.*;
+
 
 public class Cell extends JButton {
+    private boolean isClicked;
+    private String cellValue;
 
     public Cell(String name) {
+        isClicked = false;
+        cellValue = " ";
         setName(name);
-        name = name.replace("Button", "");
-        setText(name);
+//        name = name.replace("Button", "");
+//        setText(name);
+        setText(cellValue);
+        setFocusPainted(false);
+        setFont(new Font(Font.SANS_SERIF, Font.BOLD, 30));
     }
 
     public void clicked(boolean turn) {
-        if (turn) {
-            setText("X");
-        } else {
-            setText("O");
+            if (turn) {
+                cellValue = "X";
+            } else {
+                cellValue = "O";
+            }
+            setText(cellValue);
+            isClicked = true;
         }
+
+    public boolean isClickable() {
+        return !isClicked;
     }
 
-    private class mListener implements MouseListener {
-        @Override
-        public void mouseClicked(MouseEvent e) {
-            if (e.getButton() == MouseEvent.BUTTON1) {
+    public String getCellValue() {
+        return cellValue;
+    }
 
-            }
-        }
+    public void setClicked() {
+        isClicked = true;
+    }
 
-        @Override
-        public void mousePressed(MouseEvent e) {
-
-        }
-
-        @Override
-        public void mouseReleased(MouseEvent e) {
-
-        }
-
-        @Override
-        public void mouseEntered(MouseEvent e) {
-
-        }
-
-        @Override
-        public void mouseExited(MouseEvent e) {
-
-        }
+    public void setDefault() {
+        cellValue = " ";
+        setText(cellValue);
+        isClicked = false;
     }
 }

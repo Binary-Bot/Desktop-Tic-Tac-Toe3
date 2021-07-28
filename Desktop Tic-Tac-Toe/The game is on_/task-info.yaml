@@ -312,6 +312,115 @@ files:
         }
     }
   learner_created: false
+- name: src/tictactoe/Cell.java
+  visible: true
+  text: |
+    package tictactoe;
+
+    import javax.swing.*;
+    import java.awt.event.MouseEvent;
+    import java.awt.event.MouseListener;
+
+    public class Cell extends JButton {
+
+        public Cell(String name) {
+            setName(name);
+            name = name.replace("Button", "");
+            setText(name);
+        }
+
+        public void clicked(boolean turn) {
+            if (turn) {
+                setText("X");
+            } else {
+                setText("O");
+            }
+        }
+
+        private class mListener implements MouseListener {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                if (e.getButton() == MouseEvent.BUTTON1) {
+
+                }
+            }
+
+            @Override
+            public void mousePressed(MouseEvent e) {
+
+            }
+
+            @Override
+            public void mouseReleased(MouseEvent e) {
+
+            }
+
+            @Override
+            public void mouseEntered(MouseEvent e) {
+
+            }
+
+            @Override
+            public void mouseExited(MouseEvent e) {
+
+            }
+        }
+    }
+  learner_created: true
+- name: src/tictactoe/TicTacToeView.java
+  visible: true
+  text: |
+    package tictactoe;
+
+    import javax.swing.*;
+    import java.awt.*;
+    import java.awt.event.ActionEvent;
+    import java.awt.event.ActionListener;
+
+    public class TicTacToeView extends JPanel {
+        private TicTacToeController controller;
+        private Cell[][] grid;
+        private boolean toggleValue;
+
+        public TicTacToeView() {
+            toggleValue = false;
+            setLayout(new GridLayout(3,3));
+            setPreferredSize(new Dimension(300, 300));
+            createGrid();
+
+        }
+
+        private void createGrid() {
+            grid = new Cell[3][3];
+            int n = 3;
+            for (int i = 0; i < 3; i++) {
+                char a = 'A';
+                for (int j = 0; j < 3; j++) {
+                    grid[j][i] = new Cell("Button" + a + n);
+                    int finalJ = j;
+                    int finalI = i;
+                    grid[j][i].addActionListener(new ActionListener() {
+                        @Override
+                        public void actionPerformed(ActionEvent e) {
+                            System.out.println(e.getModifiers());
+                            toggleValue = !toggleValue;
+                            grid[finalJ][finalI].clicked(toggleValue);
+                        }
+                    });
+                    add(grid[j][i]);
+                    a += 1;
+                }
+                n--;
+            }
+        }
+        public void addController(TicTacToeController controller) {
+            this.controller = controller;
+        }
+    }
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/174/stages/898/implement#comment
-status: Unchecked
-record: -1
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Mon, 05 Jul 2021 21:52:29 UTC
+record: 2
